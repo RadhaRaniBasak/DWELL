@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#10b981" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#1e293b" stroke-width="4" />
+
+  <!-- Outer Dial Ring -->
+  <circle cx="256" cy="272" r="148" fill="#090d16" stroke="#334155" stroke-width="12" />
+  <circle cx="256" cy="272" r="148" fill="none" stroke="url(#accentGrad)" stroke-width="12" stroke-dasharray="697" stroke-dashoffset="180" stroke-linecap="round" filter="url(#glow)" />
+
+  <!-- Stopwatch top stem & button -->
+  <rect x="236" y="80" width="40" height="36" rx="6" fill="#64748b" />
+  <rect x="216" y="62" width="80" height="18" rx="8" fill="#94a3b8" />
+  <line x1="160" y1="130" x2="185" y2="155" stroke="#64748b" stroke-width="12" stroke-linecap="round" />
+  <line x1="352" y1="130" x2="327" y2="155" stroke="#64748b" stroke-width="12" stroke-linecap="round" />
+
+  <!-- Inner Truck / Clock Emblem -->
+  <!-- Truck body -->
+  <path d="M190 235 H280 V300 H190 Z" fill="#0f172a" stroke="#f8fafc" stroke-width="10" stroke-linejoin="round" />
+  <!-- Cab -->
+  <path d="M280 255 H315 L335 278 V300 H280 Z" fill="#0f172a" stroke="#f8fafc" stroke-width="10" stroke-linejoin="round" />
+  <!-- Cab window -->
+  <path d="M285 263 H310 L323 278 H285 Z" fill="#38bdf8" />
+  <!-- Wheels -->
+  <circle cx="215" cy="305" r="16" fill="#10b981" stroke="#020617" stroke-width="5" />
+  <circle cx="295" cy="305" r="16" fill="#10b981" stroke="#020617" stroke-width="5" />
+
+  <!-- Live Clock hands overlay -->
+  <circle cx="256" cy="272" r="8" fill="#f59e0b" />
+  <line x1="256" y1="272" x2="256" y2="180" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" />
+  <line x1="256" y1="272" x2="300" y2="240" stroke="#f59e0b" stroke-width="5" stroke-linecap="round" />
+
+  <!-- DWELL word mark -->
+  <text x="256" y="446" text-anchor="middle" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="34" letter-spacing="9">DWELL</text>
+  <text x="256" y="474" text-anchor="middle" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14" letter-spacing="4">DETENTION GUARDIAN</text>
+</svg>

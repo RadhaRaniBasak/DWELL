@@ -1,0 +1,6 @@
+{
+  "name": "Dwell — Truck Detention Claims & Facility Risk",
+  "description": "Automated dock dwell tracking, contractual rate confirmation term extraction, real-time detention clock, and deadline-driven claim filing.",
+  "requestFramePermissions": ["geolocation", "camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
